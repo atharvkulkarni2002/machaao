@@ -51,8 +51,8 @@ function Cards() {
       {
         source.map((data,index)=>{
            return(
-           <CardHolder>
-             <img src={data.src} key={index} style={{width:"70%",height:"60%",margin:"auto"}}/>
+           <CardHolder key={index}>
+             <img src={data.src} style={{width:"70%",height:"60%",margin:"auto"}}/>
              <TextWrapper>{data.text}</TextWrapper>
            </CardHolder>)
         })
