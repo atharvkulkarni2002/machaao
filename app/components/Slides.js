@@ -50,9 +50,9 @@ function Slides() {
       className='pt-4 '
         >
         {
-          source.map((data)=>{
+          source.map((data,index)=>{
             return(
-              <img src={data.src} className='rounded-lg mt-4' style={{width:"80%",height:"60%",borderRadius:"10%"}}/>
+              <img src={data.src} key={index} className='rounded-lg mt-4' style={{width:"80%",height:"60%",borderRadius:"10%"}}/>
             )
           })
         }

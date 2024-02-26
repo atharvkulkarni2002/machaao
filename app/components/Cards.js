@@ -49,10 +49,10 @@ function Cards() {
     <>
     <CardContainer>
       {
-        source.map((data)=>{
+        source.map((data,index)=>{
            return(
            <CardHolder>
-             <img src={data.src} style={{width:"70%",height:"60%",margin:"auto"}}/>
+             <img src={data.src} key={index} style={{width:"70%",height:"60%",margin:"auto"}}/>
              <TextWrapper>{data.text}</TextWrapper>
            </CardHolder>)
         })
