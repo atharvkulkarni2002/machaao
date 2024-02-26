@@ -1,0 +1,17 @@
+@media screen and (max-width:600px) {
+    .bellIcon{
+        width: 25px;
+        height: 25px;
+    }
+    .cartIcon{
+        width: 25px;
+        height: 25px;
+    }
+    .LocationHolder{
+        visibility: hidden;
+    }
+    .userIcon{
+        width: 42px;
+        height: 42px;
+    }
+}
