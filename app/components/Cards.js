@@ -42,6 +42,9 @@ function Cards() {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    @media(max-width:850px){
+      font-size: 2.5vw;
+    }
   `
 
   return (
@@ -51,10 +54,13 @@ function Cards() {
       {
         source.map((data,index)=>{
            return(
-           <CardHolder key={index}>
+            <Box key={index}>
+           <CardHolder>
              <img src={data.src} style={{width:"70%",height:"60%",margin:"auto"}}/>
+           </CardHolder>
              <TextWrapper>{data.text}</TextWrapper>
-           </CardHolder>)
+           </Box>
+           )
         })
       }
     </CardContainer>
